@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import {Link} from 'react-router-dom'
 
 function Header (){
 
@@ -16,9 +17,9 @@ function Header (){
                 </div>
                 <div className="navbar-right">
                     <ul className="header-categories-ul">
-                        <li className="header-navlink">Home</li>
+                        <Link to='/' className="header-navlink">Home</Link>
                         <li className="header-navlink">Shop</li>
-                        <li className="header-navlink">Login</li>
+                        <Link to='/login' className="header-navlink">Login</Link>
                         <li className="header-navlink">Sign Up</li>
                     </ul>
                 </div>

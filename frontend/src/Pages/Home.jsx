@@ -14,6 +14,9 @@ function Home() {
     const home3Slide = useRef(null)
     const home3SliderImgRefs = useRef([])
     const home3OffsetTop = useRef(null)
+    const home3title = useRef(null)
+    const home3logo = useRef(null)
+    const scrolledPastHome3Logo = useRef(false)
 
     // VIEWPORT RESIZE RECALCULATIONS
     useEffect(()=>{
@@ -224,6 +227,29 @@ function Home() {
         }
     }, [])
 
+    function home3TextAnimation (){
+        home3OffsetTop.current = home3.current.offsetTop
+        let home3Height = home3.current.offsetHeight
+
+        if(window.scrollY>=home3OffsetTop.current && scrolledPastHome3Logo.current == false){
+            home3logo.current.style.opacity = '1'
+            scrolledPastHome3Logo.current = true
+
+        }
+
+        if(window.scrollY>=(home3OffsetTop.current+home3Height/4)){
+            home3logo.current.style.opacity = '0'
+            home3title.current.style.opacity = '1'
+        }
+    }
+
+    useEffect(()=>{
+        window.addEventListener('scroll', home3TextAnimation)
+        return () =>{
+            window.removeEventListener('scroll', home3TextAnimation)
+        }
+    }, [])
+
     const home4ImageRefs = useRef([])
 
     function CreateHome4Slider ({image, index}){
@@ -276,8 +302,11 @@ function Home() {
             </section>
             <section className="home3" ref={home3}>
                 <div className="home3-content-wrapper">
-                    <div className="home3-title-container">
+                    <div className="home3-title-container" ref={home3title}>
                         <h1 className="slogan">JUST DO IT.</h1>
+                    </div>
+                    <div className="home3-logo-container" ref={home3logo}>
+                        <img className="home3-logo" src="/slider-images/nike-word.png"></img>
                     </div>
                     <div className="home3-slider-wrapper">
                         <div className="home3-slider" ref={home3Slider}>
