@@ -207,13 +207,9 @@ function Home() {
     function home3Animation (){
         home3OffsetTop.current = home3.current.offsetTop
         let percentageScrolledHome3 = (window.scrollY-(home3OffsetTop.current-viewportHeight.current))/(home3.current.offsetHeight)*100
-        //console.log('scroll', window.scrollY)
-        //console.log(window.scrollY-(home3OffsetTop.current-viewportHeight.current))
-        //console.log(home3.current.offsetHeight)
-        console.log(percentageScrolledHome3)
+    
         if(window.scrollY>=(home3OffsetTop.current-viewportHeight.current)){
             home3Slider.current.style.transform = `translateX(-${percentageScrolledHome3*0.7}%)`
-
         }
     }
 

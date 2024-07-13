@@ -2,8 +2,8 @@ import { useState } from "react"
 import axios from 'axios';
 
 function Login (){
-  const [email, setEmail] = useState(null)
-  const [password, setPassword] = useState(null)
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
   const handleEmailChange = (e)=>{
     setEmail(e.target.value)
@@ -12,6 +12,10 @@ function Login (){
     setPassword(e.target.value)
   }
 
+  const handleFormSubmit = async (e) => {
+    e.preventDefault()
+    const response = await axios.post('http://localhost:5173/login', {email:email, password:password})
+  }
 
   return(
     <section className="login-page-wrapper">

@@ -33,14 +33,14 @@ body::-webkit-scrollbar {
     display: flex;
     list-style: none;
     gap: 50px;
-    font-family: "Source Code Pro";
+    font-family: "Roboto";
     padding-right: 20px;
 }
 
 .header-navlink {
     cursor: pointer;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .header-navlink:visited {
@@ -371,18 +371,24 @@ body::-webkit-scrollbar {
     justify-content: center;
 }
 .login-page-text {
-    font-family: "Source Code Pro";
+    font-family: "Roboto";
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     padding-bottom: 20px;
     color: rgba(97, 97, 97, 0.87);
 }
 
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .login-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
+    width: 50%;
 }
 
 .login-email-input-container{
@@ -402,7 +408,7 @@ body::-webkit-scrollbar {
     height: 25px;
     font-size: 17px;
     border-radius: 8px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.477);
     padding: 5px;
 }
 
@@ -410,7 +416,7 @@ body::-webkit-scrollbar {
     width: 400px;
     height: 25px;
     font-size: 17px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.477);
     border-radius: 8px;
     padding: 5px;
 }
@@ -427,7 +433,7 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     padding: 8px;
     font-size: 15px;
-    font-family: "Source Code Pro";
+    font-family: "Roboto";
     font-weight: 500;
     cursor: pointer;
 }
@@ -440,9 +446,56 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     padding: 8px;
     font-size: 15px;
-    font-family: "Source Code Pro";
+    font-family: "Roboto";
     font-weight: 500;
     cursor: pointer;
     scale: 1.05;
     transition: scale 0.1s;
+}
+
+
+/*Register page css*/
+
+.name-input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.first-name-input {
+    width: 188px;
+    height: 25px;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.477);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.last-name-input {
+    width: 188px;
+    height: 25px;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.477);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.username-input-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.username-input {
+    width: 400px;
+    height: 25px;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.477);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+
+.error-message-container{
+    position: relative;
 }
