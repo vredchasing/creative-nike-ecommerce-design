@@ -1,0 +1,75 @@
+let products = [
+    {
+        productID: 1,
+        productName: 'Nike Air Force 1',
+        productPrice: 115,
+        productBrand: 'Nike',
+        productColor:'White',
+        productDescription: '',
+        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
+        productGender: 'Unisex'
+    },
+    {
+        productID: 2,
+        productName: 'Nike Airmax',
+        productPrice: 110,
+        productBrand: 'Nike',
+        productColor:'White',
+        productDescription: '',
+        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
+        productGender: 'Unisex'
+    },
+    {
+        productID: 3,
+        productName: 'Nike SB Dunks',
+        productPrice: 115,
+        productBrand: 'Nike',
+        productColor:'White',
+        productDescription: '',
+        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
+        productGender: 'Unisex'
+    },
+    {
+        productID: 4,
+        productName: 'Nike SB Dunks',
+        productPrice: 115,
+        productBrand: 'Nike',
+        productColor:'White',
+        productDescription: '',
+        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
+        productGender: 'Unisex'
+    },
+    {
+        productID: 5,
+        productName: 'Nike SB Dunks',
+        productPrice: 115,
+        productBrand: 'Nike',
+        productColor:'White',
+        productDescription: '',
+        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
+        productGender: 'Unisex'
+    },
+    {
+        productID: 6,
+        productName: 'Nike SB Dunks',
+        productPrice: 115,
+        productBrand: 'Nike',
+        productColor:'White',
+        productDescription: '',
+        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
+        productGender: 'Unisex'
+    },
+    {
+        productID: 7,
+        productName: 'Nike SB Dunks',
+        productPrice: 115,
+        productBrand: 'Nike',
+        productColor:'White',
+        productDescription: '',
+        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
+        productGender: 'Unisex'
+    },
+
+]
+
+export default products

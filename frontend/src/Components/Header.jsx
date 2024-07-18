@@ -18,7 +18,7 @@ function Header (){
                 <div className="navbar-right">
                     <ul className="header-categories-ul">
                         <Link to='/' className="header-navlink">Home</Link>
-                        <li className="header-navlink">Shop</li>
+                        <Link to='/shop' className="header-navlink">Shop</Link>
                         <Link to='/login' className="header-navlink">Login</Link>
                         <Link to='/register' className="header-navlink">Sign Up</Link>
                     </ul>

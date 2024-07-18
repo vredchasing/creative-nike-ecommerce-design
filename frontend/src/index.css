@@ -499,3 +499,54 @@ body::-webkit-scrollbar {
 .error-message-container{
     position: relative;
 }
+
+
+
+
+
+
+
+
+
+/*PRODUCT CARDS*/
+
+.product-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+.product-cards-container {
+    border-radius: 10px;
+    box-shadow: 2px 4px 12px #00000014;
+    cursor: pointer;
+    padding: 20px;
+}
+.product-image-container {
+    display: flex;
+    width: max-content;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.product-image {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.product-name {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.product-price {
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.products-row-wrapper {
+    display: flex;
+    gap: 1.5vw;
+}

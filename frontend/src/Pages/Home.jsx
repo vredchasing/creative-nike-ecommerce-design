@@ -27,7 +27,7 @@ function Home() {
         window.addEventListener('resize', handleViewportResize)
 
         return ()=>{
-            window.addEventListener('resize', handleViewportResize) 
+            window.removeEventListener('resize', handleViewportResize) 
         }
     }, [])
 

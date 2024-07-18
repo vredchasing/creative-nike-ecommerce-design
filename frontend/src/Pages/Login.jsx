@@ -27,18 +27,19 @@ function Login (){
           <h1 className="login-page-text">Login to your Nike member account.</h1>
         </div>
 
-        <form className="login-form">
-          <div className="login-email-input-container">
-            <input className="login-email-input" onChange={handleEmailChange}></input>
-          </div>
-          <div className="login-password-input-container">
-            <input type='password'className="login-password-input" onChange={handlePasswordChange}></input>
-          </div>
-          <div className="login-button-container">
-            <button className="login-button">Login</button>
-          </div>
-        </form>
-
+        <div className="login-form-container">
+          <form className="login-form">
+            <div className="login-email-input-container">
+              <input className="login-email-input" onChange={handleEmailChange}></input>
+            </div>
+            <div className="login-password-input-container">
+              <input type='password'className="login-password-input" onChange={handlePasswordChange}></input>
+            </div>
+            <div className="login-button-container">
+              <button className="login-button">Login</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   )
