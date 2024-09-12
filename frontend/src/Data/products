@@ -1,74 +1,263 @@
 let products = [
     {
         productID: 1,
-        productName: 'Nike Air Force 1',
+        productName: 'Nike SB Dunks',
         productPrice: 115,
         productBrand: 'Nike',
-        productColor:'White',
-        productDescription: '',
-        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
-        productGender: 'Unisex'
+        productVersions : [
+            {
+                color : 'White',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'/product-images/air-force.png',
+                    img3:'/product-images/air-force.png'
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            }
+        ]
     },
     {
         productID: 2,
-        productName: 'Nike Airmax',
-        productPrice: 110,
+        productName: 'Nike SB Dunks',
+        productPrice: 115,
         productBrand: 'Nike',
-        productColor:'White',
-        productDescription: '',
-        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
-        productGender: 'Unisex'
+        productVersions : [
+            {
+                color : 'White',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'/product-images/air-force.png',
+                    img3:'/product-images/air-force.png'
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            }
+        ]
     },
     {
         productID: 3,
         productName: 'Nike SB Dunks',
         productPrice: 115,
         productBrand: 'Nike',
-        productColor:'White',
-        productDescription: '',
-        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
-        productGender: 'Unisex'
+        productVersions : [
+            {
+                color : 'White',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            }
+        ]
     },
     {
         productID: 4,
         productName: 'Nike SB Dunks',
         productPrice: 115,
         productBrand: 'Nike',
-        productColor:'White',
-        productDescription: '',
-        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
-        productGender: 'Unisex'
+        productVersions : [
+            {
+                color : 'White',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            }
+        ]
     },
     {
         productID: 5,
         productName: 'Nike SB Dunks',
         productPrice: 115,
         productBrand: 'Nike',
-        productColor:'White',
-        productDescription: '',
-        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
-        productGender: 'Unisex'
+        productVersions : [
+            {
+                color : 'White',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            }
+        ]
     },
     {
         productID: 6,
         productName: 'Nike SB Dunks',
         productPrice: 115,
         productBrand: 'Nike',
-        productColor:'White',
-        productDescription: '',
-        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
-        productGender: 'Unisex'
+        productVersions : [
+            {
+                color : 'White',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            }
+        ]
     },
     {
         productID: 7,
         productName: 'Nike SB Dunks',
         productPrice: 115,
         productBrand: 'Nike',
-        productColor:'White',
-        productDescription: '',
-        productImages: {img1:'/product-images/air-force.png', img2:'', img3:''},
-        productGender: 'Unisex'
+        productVersions : [
+            {
+                color : 'White',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            }
+        ]
     },
+
+    {
+        productID: 8,
+        productName: 'Nike SB Dunks',
+        productPrice: 115,
+        productBrand: 'Nike',
+        productVersions : [
+            {
+                color : 'White',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            },
+            {
+                color : 'Black',
+                productImages: {
+                    img1:'/product-images/air-force.png',
+                    img2:'',
+                    img3:''
+                }
+            }
+        ]
+    },
+
+
 
 ]
 

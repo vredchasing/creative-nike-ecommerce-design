@@ -3,7 +3,7 @@ function ProductCards({product, index}){
     return(
         <div className="product-cards-container">
             <div className="product-image-container">
-                <img className="product-image" src={product.productImages.img1}></img>
+                <img className="product-image" src={product.productVersions[0].productImages.img1}></img>
             </div>
             <div className="product-info-container">
                 <div className="product-name-container">

@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+.main-body {
+    overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -33,7 +37,7 @@ body::-webkit-scrollbar {
     display: flex;
     list-style: none;
     gap: 50px;
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     padding-right: 20px;
 }
 
@@ -371,7 +375,7 @@ body::-webkit-scrollbar {
     justify-content: center;
 }
 .login-page-text {
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 20px;
     padding-bottom: 20px;
@@ -433,7 +437,7 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     padding: 8px;
     font-size: 15px;
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 500;
     cursor: pointer;
 }
@@ -446,7 +450,7 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     padding: 8px;
     font-size: 15px;
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 500;
     cursor: pointer;
     scale: 1.05;
@@ -542,11 +546,86 @@ body::-webkit-scrollbar {
 }
 
 .product-price {
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
 
 .products-row-wrapper {
     display: flex;
     gap: 1.5vw;
+}
+
+
+
+
+
+/*PRODUCT PAGE */
+
+.product-page-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.product-image-main-container {
+    display: flex;
+    width: 500px;
+    height: 450px;
+}
+.product-image-main{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+.product-page-info-wrapper {
+    display: flex;
+
+}
+.product-page-info-left-wrapper {
+    display: flex;
+    width: max-content;
+    gap: 1vw;
+}
+.product-page-info-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    gap: 1vw;
+}
+.product-image-small{
+    width: 60px;
+    border-radius: 7px;
+}
+
+.product-name-container-page {
+    width: max-content;
+    text-wrap: nowrap;
+}
+.product-name-page {
+    width: max-content;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 0px;
+}
+.product-price {
+    font-size: 20px;
+}
+
+
+/*Product color selector css*/
+.product-colors-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 1vw;
+}
+
+.product-colors-container {
+    width: 70px;
+}
+
+.product-colors-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
 }
